@@ -1,78 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub</title>
-
-    <style>
-        body{
-            background-color: lightblue;
-            margin: 0;
-            text-align: center;
-            background-image: url("images/bulding.jpg");
-            background-repeat: no-repeat;
-            background-size:100% 100%;
-            background-position: center;
-            background-attachment: fixed;
-            body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-}
-        }
-
-        h1{
-            background-color: navy;
-            color: white;
-            padding: 20px;
-            margin: 0;
-        }
-
-        nav{
-            background-color: beige;
-            padding: 15px;
-        }
-
-        nav a{
-            text-decoration: none;
-            color: black;
-            margin: 15px;
-            font-size: 18px;
-        }
-
-        nav a:hover{
-            color: blue;
-            text-decoration: underline;
-        }
-
-        .content{
-            padding: 50px;
-            font-size: 22px;
-        }
-
-        footer{
-            background-color: beige;
-            padding: 15px;
-        }
-    </style>
-
+    <title>Student Hub - CHARUSAT</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
-<body>
+<body class="index-body">
 
-    <h1>STUDENT HUB</h1>
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
+    <!-- NOTICE BAR -->
+    <div class="notice-bar">
+        📢 Latest Notice: Mid-Sem Exam Schedule Announced | Cognizance 2026 TechFest Registration Open!
+    </div>
+
+    <!-- NAVIGATION -->
     <nav>
-        <a href="/index.html">home</a>
-        <a href="pages/login.html">Login</a>
-        <a href="pages/contact.html">Contact</a>
-        <a href="pages/KYA-APPLICATION.HTML">KYA-APPLICATION</a>
+        <a href="pages/event.html">EVENTS</a>
+        <a href="pages/register.html">REGISTER</a>
+        <a href="pages/contact.html">CONTACT</a>
     </nav>
+    <!-- HOME LINK AT BOTTOM RIGHT -->
+    <a href="index.html" class="home-btn">🏠 Home</a>
 
-           <footer>
-        &copy; 2026 STUDENT HUB
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
     </footer>
 
 </body>
+
 </html>

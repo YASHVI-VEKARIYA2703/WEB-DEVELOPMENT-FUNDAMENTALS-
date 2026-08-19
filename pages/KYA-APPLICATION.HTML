@@ -2,60 +2,66 @@
 <html lang="en">
 
 <head>
-    <title>KYA APPLICATION</title>
-    <link rel="stylesheet" href="../CSS/kyaapplication.css">
-    <style>
-    body{
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f2f2f2;
-    }
-
-    h1{
-        background-color: rgb(35,53,92);
-        color: white;
-        padding: 15px;
-    }
-
-    table{
-        background-color: white;
-        padding: 20px;
-        border: 1px solid black;
-    }
-
-    td{
-        padding: 10px;
-    }
-
-    input{
-        width: 200px;
-        padding: 5px;
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYA Application - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body>
+<body class="kya-body">
 
-    <h1 align="center">KYA APPLICATION FORM</h1>
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <table align="center">
+    <h1 class="page-title">KYA APPLICATION FORM</h1>
 
-        <tr>
-            <td><b>NAME</b></td>
-            <td>
-                <input type="text" id="name" placeholder="Enter Name">
-            </td>
-        </tr>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="KYA-APPLICATION.HTML" class="active">KYA APPLICATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
-        <tr>
-            <td><b>ID</b></td>
-            <td>
-                <input type="text" id="id" placeholder="Enter ID">
-            </td>
-        </tr>
+    <!-- KYA FORM BOX -->
+    <div class="form-box">
+        <h2>KYA (Know Your Admission) Form</h2>
 
-    </table>
+        <form action="dashboard.html" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" placeholder="Enter Student ID" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="course">Degree / Course:</label>
+            <input type="text" id="course" placeholder="e.g. B.Tech Computer Engineering" required>
+
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" placeholder="e.g. Semester 3" required>
+
+            <button type="submit">Submit KYA Form</button>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
 
 </body>
 
 </html>
+
+

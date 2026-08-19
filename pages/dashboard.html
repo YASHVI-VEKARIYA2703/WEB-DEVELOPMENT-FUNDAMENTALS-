@@ -3,88 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background:#f2f2f2;
-        }
-
-        h1{
-            text-align:center;
-            background:rgb(35, 53, 92);
-            padding:15px;
-        }
-
-        p{
-            text-align:center;
-            background:rgb(209, 241, 149);
-            color:white;
-            padding:10px;
-        }
-
-        .container{
-            display:grid;
-            grid-template-columns:repeat(2,1fr);
-            gap:30px;
-            width:80%;
-            margin:40px auto;
-        }
-
-        .box button{
-            width:100%;
-            height:250px;
-            font-size:28px;
-            font-weight:bold;
-            background:beige;
-            border:2px solid black;
-            border-radius:10px;
-            cursor:pointer;
-        }
-
-        .box button:hover{
-            background:rgb(204, 255, 163);
-        }
-
-        a{
-            text-decoration:none;
-        }
-    </style>
+    <title>Dashboard - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
+<body class="dashboard-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-<h1>Dashboard</h1>
-<p>WELCOME TO STUDENT HUB PORTAL</p>
+    <h1 class="page-title">STUDENT DASHBOARD</h1>
 
-<div class="container">
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html" class="active">DASHBOARD</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="course.html">COURSES</a>
+        <a href="event.html">EVENTS</a>
+        <a href="KYA-APPLICATION.HTML">KYA APPLICATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
-    <div class="box">
-        <a href="../pages/attendence.html">
-            <button>ATTENDANCE</button>
-        </a>
+    <!-- STUDENT INFO STRIP -->
+    <div class="student-info-bar">
+        <div><b>Student Name:</b> Yashvi Vekariya (25DCE122)</div>
+        <div><b>Program:</b> B.Tech (Computer Engineering) - Semester 3</div>
     </div>
 
-    <div class="box">
-        <a href="../pages/result.html">
-            <button>RESULT</button>
-        </a>
+    <!-- 4 MAIN BUTTONS -->
+    <div class="dashboard-container">
+
+        <div class="dash-box">
+            <a href="attendence.html">
+                <button>📊 ATTENDANCE</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="result.html">
+                <button>📜 RESULT</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="fees.html">
+                <button>💳 FEES DETAILS</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="timetable.html">
+                <button>📅 TIME TABLE</button>
+            </a>
+        </div>
+
     </div>
 
-    <div class="box">
-        <a href="../pages/fees.html">
-            <button>FEES</button>
-        </a>
-    </div>
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
 
-    <div class="box">
-        <a href="../pages/timetable.html">
-            <button>TIME TABLE</button>
-        </a>
-    </div>
-
-</div>
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
 
 </body>
 </html>

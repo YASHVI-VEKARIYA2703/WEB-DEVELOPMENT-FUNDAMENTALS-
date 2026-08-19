@@ -3,94 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Student Hub</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-        }
-
-        body{
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #dbeafe, #bfdbfe);
-            min-height:100vh;
-            display:flex;
-            flex-direction:column;
-        }
-
-        h1{
-            text-align:center;
-            color:rgb(28,40,65);
-            margin:25px 0;
-            font-family:'Times New Roman', Times, serif;
-        }
-
-        .contact-box{
-            width:420px;
-            margin:auto;
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 10px gray;
-        }
-
-        .contact-box h2{
-            text-align:center;
-            color:rgb(28,40,65);
-            margin-bottom:20px;
-        }
-
-        .contact-box p{
-            margin:15px 0;
-            font-size:18px;
-        }
-
-        .contact-box a{
-            color:blue;
-            text-decoration:none;
-        }
-
-        .contact-box a:hover{
-            text-decoration:underline;
-        }
-
-        footer{
-            background-color:rgb(28,40,65);
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:auto;
-        }
-    </style>
+    <title>Contact Us - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body>
+<body class="contact-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <h1>STUDENT HUB</h1>
+    <h1 class="page-title">CONTACT US</h1>
 
-    <div class="contact-box">
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html" class="active">CONTACT</a>
+    </nav>
 
-        <h2>Contact Us</h2>
+    <!-- CONTACT DETAILS BOX -->
+    <div class="contact-card">
+        <h2>CHARUSAT Student Helpdesk</h2>
 
-        <p><b>Phone:</b> +91 985641237</p>
+        <p><b>📞 Phone:</b> +91 985641237 / +91 (02697) 265011</p>
 
-        <p><b>Email:</b> studenthub@gmail.com</p>
+        <p><b>✉️ Email:</b> <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a></p>
 
-        <p>
-            <b>Website:</b>
-            <a href="index.html">www.studenthub.com</a>
-        </p>
+        <p><b>🌐 Website:</b> <a href="../index.html">www.studenthub.com</a></p>
 
-        <p><b>Address:</b> CHARUSAT University, Changa, Gujarat</p>
+        <p><b>📍 Address:</b> CHARUSAT University Campus, Changa - 388421, Gujarat, India</p>
 
-        <p><b>Working Hours:</b> Monday - Saturday (9:00 AM - 5:00 PM)</p>
-
+        <p><b>⏰ Working Hours:</b> Monday - Saturday (9:00 AM - 5:00 PM)</p>
     </div>
 
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
     <footer>
-        &copy; 2026 STUDENT HUB. All Rights Reserved.
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
     </footer>
 
 </body>

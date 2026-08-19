@@ -3,139 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course Registration Form</title>
-
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
-
-        body{
-            background:linear-gradient(135deg,#4facfe,#00f2fe);
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-        }
-
-        .container{
-            width:450px;
-            background:white;
-            padding:30px;
-            border-radius:10px;
-            box-shadow:0 0 15px rgba(0,0,0,0.3);
-        }
-
-        h2{
-            text-align:center;
-            color:#333;
-            margin-bottom:20px;
-        }
-
-        label{
-            display:block;
-            margin-top:10px;
-            font-weight:bold;
-        }
-
-        input,
-        select,
-        textarea{
-            width:100%;
-            padding:10px;
-            margin-top:5px;
-            border:1px solid #ccc;
-            border-radius:5px;
-            font-size:15px;
-        }
-
-        textarea{
-            resize:none;
-        }
-
-        .radio-group{
-            margin-top:8px;
-        }
-
-        .radio-group input{
-            width:auto;
-            margin-right:5px;
-        }
-
-        .radio-group label{
-            display:inline;
-            margin-right:20px;
-            font-weight:normal;
-        }
-
-        button{
-            width:100%;
-            margin-top:20px;
-            padding:12px;
-            background:#007BFF;
-            color:white;
-            border:none;
-            border-radius:5px;
-            font-size:16px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#0056b3;
-        }
-    </style>
+    <title>Course Registration - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body>
+<body class="course-body">
 
-<div class="container">
-    <h2>Course Registration Form</h2>
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <form>
+    <h1 class="page-title">COURSE REGISTRATION</h1>
 
-        <label>Full Name</label>
-        <input type="text" placeholder="Enter your full name" required>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html" class="active">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
-        <label>Email</label>
-        <input type="email" placeholder="Enter your email" required>
+    <!-- COURSE FORM BOX -->
+    <div class="form-box">
+        <h2>Course Registration Form</h2>
 
-        <label>Phone Number</label>
-        <input type="tel" placeholder="Enter your phone number" required>
+        <form action="dashboard.html" method="get">
+            <label for="cname">Full Name:</label>
+            <input type="text" id="cname" placeholder="Enter Full Name" required>
 
-        <label>Select Course</label>
-        <select required>
-            <option value="">--Select Course--</option>
-            <option>HTML & CSS</option>
-            <option>JavaScript</option>
-            <option>Python</option>
-            <option>Java</option>
-            <option>C++</option>
-            <option>Data Structures</option>
-        </select>
+            <label for="cemail">Email:</label>
+            <input type="email" id="cemail" placeholder="Enter Email" required>
 
-        <label>Gender</label>
-        <div class="radio-group">
-            <input type="radio" name="gender"> Male
-            <input type="radio" name="gender"> Female
-            <input type="radio" name="gender"> Other
-        </div>
+            <label for="cphone">Phone Number:</label>
+            <input type="tel" id="cphone" placeholder="Enter Phone Number" required>
 
-        <label>Mode of Learning</label>
-        <div class="radio-group">
-            <input type="radio" name="mode"> Online
-            <input type="radio" name="mode"> Offline
-        </div>
+            <label for="ccourse">Select Course:</label>
+            <select id="ccourse" required>
+                <option value="">-- Select Course --</option>
+                <option>HTML &amp; CSS</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C++</option>
+                <option>Data Structures</option>
+            </select>
 
-        <label>Address</label>
-        <textarea rows="4" placeholder="Enter your address"></textarea>
+            <label>Gender:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
 
-        <button type="submit">Register</button>
+            <label>Mode of Learning:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="mode" value="Online" checked> Online</label>
+                <label><input type="radio" name="mode" value="Offline"> Offline</label>
+            </div>
 
-    </form>
-</div>
+            <label for="caddress">Address:</label>
+            <textarea id="caddress" rows="3" placeholder="Enter Address"></textarea>
+
+            <button type="submit">Register Course</button>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
 
 </body>
 </html>

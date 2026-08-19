@@ -1,147 +1,645 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    
-}
-html,body{
-    height: 100%;
-    width: 100%;
-}
-body
-    /* display: flex;
-    align-items: center;
-    justify-content: center;
-    align-items: center;} */
-    
-h1{
-    text-align: center;
-    color: rgb(21, 29, 51);
-    background-color: aliceblue;
-    height: auto;
-    width: 100%;
-}
-#form{
-    padding-top: 80px;
-    height: 180px;
-    width: 300px;
-    text-align: center;
-    font-size:x-large;
-    font-display: auto;
-    align-content: center;
-}
-div{   
+/* ==========================================================================
+   STUDENT HUB - UNIVERSITY PORTAL STYLESHEET
+   Author: Yashvi Vekariya (B.Tech Computer Engineering)
+   ========================================================================== */
 
-    background-color: beige;
-    border-style: solid;
-    border-width: 1px;
-    margin-bottom: 100px;
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-}
-table{
-    border: 20px;
-    height: auto;
-    width: auto;
-    margin-top:20px;
-    border-color: black;
-}
-tr{
-    border: 20px;
-    height: auto;
-    width: auto;
-    margin-top:20px;
-    border-color: black;
-}
-th
-{
-    background-color: rgb(21, 29, 51);
-    font-size: large;
-    color: antiquewhite;
-    
-}
-.container{
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    min-height: 100vh;
     display: flex;
-    gap: 100px;
-    height:500px;
-    width: 500px;
+    flex-direction: column;
 }
-.box{
-    background: rgb(173, 197, 241);
-    padding: 20px;
+
+/* ==========================================================================
+   HEADER SECTION (pages/header.html)
+   ========================================================================== */
+.header-frame {
+    width: 100%;
+    height: 140px;
+    border: none;
+    display: block;
+}
+
+body.header-body {
+    margin: 0;
+    padding: 0;
+    background-color: #1B1F44;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 140px;
+    padding: 0 30px;
+    background-color: #1B1F44;
+    border-bottom: 4px solid orange;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid orange;
+}
+
+.header-title h1 {
     color: white;
-    height: 350px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+.header-title p {
+    color: #ffd700;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.header-tag {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid #ffd700;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+/* ==========================================================================
+   NAVIGATION BAR
+   ========================================================================== */
+nav {
+    background-color: #1B1F44;
+    text-align: center;
+    padding: 12px;
+    border-bottom: 2px solid orange;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin: 0 14px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: orange;
+    color: #1B1F44;
+}
+
+/* ==========================================================================
+   PERSISTENT HOME BUTTON (FIXED AT BOTTOM RIGHT)
+   ========================================================================== */
+.home-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #1B1F44;
+    color: white !important;
+    padding: 10px 20px;
+    text-decoration: none !important;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    border: 2px solid orange;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.35);
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.home-btn:hover {
+    background-color: darkblue;
+    color: #ffd700 !important;
+    transform: scale(1.05);
+}
+
+/* ==========================================================================
+   PAGE HEADING
+   ========================================================================== */
+h1.page-title,
+h1 {
+    text-align: center;
+    background-color: #F5E6C8;
+    color: #1B1F44;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* ==========================================================================
+   HOME PAGE (index.html)
+   ========================================================================== */
+body.index-body {
+    background-image: url("../images/bulding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.notice-bar {
+    background-color: orange;
+    color: #1B1F44;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.home-container {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.welcome-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    margin-bottom: 30px;
+    border: 2px solid #1B1F44;
+}
+
+.welcome-card h2 {
+    color: #1B1F44;
+    font-size: 28px;
+    margin-bottom: 12px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.welcome-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.portal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.portal-box {
+    background-color: #1B1F44;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid orange;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.portal-box:hover {
+    background-color: darkblue;
+    transform: translateY(-5px);
+}
+
+.portal-box h3 {
+    color: #ffd700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.portal-box p {
+    color: #ddd;
+    font-size: 13px;
+}
+
+/* ==========================================================================
+   DASHBOARD PAGE (pages/dashboard.html)
+   ========================================================================== */
+body.dashboard-body {
+    background-color: #DCEEFF;
+}
+
+.student-info-bar {
+    width: 80%;
+    margin: 10px auto 25px;
+    background-color: #1B1F44;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    border-left: 5px solid orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+}
+
+.dashboard-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    width: 80%;
+    margin: 20px auto 50px;
+}
+
+.dash-box button {
+    width: 100%;
+    height: 160px;
+    font-size: 22px;
+    font-weight: bold;
+    background-color: #F5E6C8;
+    color: #1B1F44;
+    border: 2px solid #1B1F44;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dash-box button:hover {
+    background-color: #ffd79e;
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   TABLE PAGES (Attendance, Fees, Result, Timetable)
+   ========================================================================== */
+.table-box {
+    width: 85%;
+    margin: 20px auto 50px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-box h2 {
+    color: #1B1F44;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    text-align: center;
+}
+
+.student-table th {
+    background-color: #1B1F44;
+    color: white;
+    padding: 12px;
+    border: 1px solid #1B1F44;
+    font-size: 15px;
+}
+
+.student-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+}
+
+.student-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-table tr:hover {
+    background-color: #eef4fc;
+}
+
+.badge-pass {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   PROFILE PAGE (pages/profile.html)
+   ========================================================================== */
+body.profile-body {
+    background-color: #dbeafe;
+}
+
+.profile-card {
+    width: 650px;
+    max-width: 90%;
+    margin: 25px auto 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #bbb;
+}
+
+.profile-card h2 {
+    text-align: center;
+    color: #1B1F44;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 26px;
+}
+
+.profile-card h3 {
+    background-color: #1B1F44;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 18px 0 10px;
+}
+
+.profile-card p {
+    font-size: 16px;
+    margin: 8px 0 8px 10px;
+}
+
+/* ==========================================================================
+   FORMS (Login, Register, Course, KYA)
+   ========================================================================== */
+body.login-body,
+body.register-body,
+body.course-body,
+body.kya-body {
+    background-color: #e6f0fa;
+}
+
+.form-box {
+    width: 450px;
+    max-width: 90%;
+    margin: 25px auto 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #1B1F44;
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #1B1F44;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.form-box label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+    color: #1B1F44;
+    font-size: 14px;
+}
+
+.form-box input[type="text"],
+.form-box input[type="password"],
+.form-box input[type="email"],
+.form-box input[type="tel"],
+.form-box select,
+.form-box textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.form-box input:focus,
+.form-box select:focus,
+.form-box textarea:focus {
+    outline: none;
+    border-color: #1B1F44;
+    background-color: #fafcff;
+}
+
+.radio-row {
+    margin-top: 8px;
+}
+
+.radio-row label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.radio-row input {
+    width: auto;
+    margin-right: 4px;
+}
+
+.form-box input[type="submit"],
+.form-box button[type="submit"] {
+    width: 100%;
+    padding: 11px;
+    background-color: #1B1F44;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.form-box input[type="submit"]:hover,
+.form-box button[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+.form-box input[type="reset"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.form-box input[type="reset"]:hover {
+    background-color: #c82333;
+}
+
+/* ==========================================================================
+   CONTACT PAGE (pages/contact.html)
+   ========================================================================== */
+body.contact-body {
+    background-color: #dbeafe;
+}
+
+.contact-card {
     width: 500px;
-}
-*{
-    
-}
-
-body{
-    background:linear-gradient(135deg,#4facfe,#00f2fe);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
+    max-width: 90%;
+    margin: 25px auto 50px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-top: 5px solid #1B1F44;
 }
 
-.container{
-    background:#fff;
-    width:420px;
-    padding:30px;
-    border-radius:12px;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
+.contact-card h2 {
+    text-align: center;
+    color: #1B1F44;
+    margin-bottom: 20px;
+    font-size: 24px;
 }
 
-h2{
-    text-align:center;
-    margin-bottom:20px;
-    color:#333;
+.contact-card p {
+    font-size: 16px;
+    margin: 14px 0;
+    line-height: 1.5;
 }
 
-label{
-    display:block;
-    margin-top:12px;
-    margin-bottom:5px;
-    font-weight:bold;
+.contact-card a {
+    color: blue;
+    text-decoration: none;
 }
 
-input,
-select,
-textarea{
-    width:100%;
-    padding:10px;
-    border:1px solid #ccc;
-    border-radius:6px;
-    font-size:15px;
+.contact-card a:hover {
+    text-decoration: underline;
 }
 
-textarea{
-    resize:none;
+/* ==========================================================================
+   EVENTS PAGE (pages/event.html)
+   ========================================================================== */
+body.event-body {
+    background-color: #dbeafe;
 }
 
-.radio-group{
-    display:flex;
-    gap:15px;
-    align-items:center;
-    margin-top:5px;
+.events-list {
+    width: 80%;
+    max-width: 900px;
+    margin: 25px auto 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.radio-group input{
-    width:auto;
+.event-item {
+    background-color: white;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #1B1F44;
 }
 
-button{
-    width:100%;
-    padding:12px;
-    margin-top:20px;
-    background:#007bff;
-    color:#fff;
-    border:none;
-    border-radius:6px;
-    font-size:16px;
-    cursor:pointer;
-    transition:0.3s;
+.event-item h2 {
+    color: #1B1F44;
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
-button:hover{
-    background:#0056b3;
+.event-tag {
+    display: inline-block;
+    background-color: orange;
+    color: #1B1F44;
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
 }
+
+.event-details {
+    background-color: #f8f9fa;
+    padding: 10px 14px;
+    border-radius: 5px;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.event-item p {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.event-item a.event-btn {
+    display: inline-block;
+    background-color: #1B1F44;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.event-item a.event-btn:hover {
+    background-color: darkblue;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+footer {
+    background-color: #1B1F44;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    margin-top: auto;
+    font-size: 14px;
+    border-top: 2px solid orange;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+@media (max-width: 768px) {
+    .portal-grid,
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .header-title h1 {
+        font-size: 22px;
+    }
+
+    .header-tag {
+        display: none;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        font-size: 14px;
+    }
+
+    .student-info-bar {
+        flex-direction: column;
+        text-align: center;
+        gap: 8px;
+    }
+}
+

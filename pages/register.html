@@ -3,117 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Hub - Registration</title>
-
-    <style>
-        body{
-            background-color: lightblue;
-            font-family: Arial, sans-serif;
-        }
-
-        h1{
-            text-align: center;
-            color: darkblue;
-            margin-top: 30px;
-        }
-
-        #form{
-            width: 400px;
-            margin: auto;
-            background-color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-            padding: 20px;
-        }
-
-        label{
-            font-weight: bold;
-        }
-
-        input, select{
-            width: 100%;
-            padding: 8px;
-            margin-top: 5px;
-            box-sizing: border-box;
-        }
-
-        input[type="submit"],
-        input[type="reset"]{
-            width: 48%;
-            padding: 10px;
-            border: none;
-            color: white;
-            cursor: pointer;
-        }
-
-        input[type="submit"]{
-            background-color: green;
-        }
-
-        input[type="reset"]{
-            background-color: red;
-            float: right;
-        }
-
-        input[type="submit"]:hover{
-            background-color: darkgreen;
-        }
-
-        input[type="reset"]:hover{
-            background-color: darkred;
-        }
-    </style>
+    <title>Registration - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
+<body class="register-body">
 
-    <h1>STUDENT HUB - REGISTRATION</h1>
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <div id="form">
-        <form action="login.html">
+    <h1 class="page-title">STUDENT REGISTRATION</h1>
 
-            <label>Full Name</label>
-            <input type="text" required><br><br>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html" class="active">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+    
+    <!-- REGISTRATION FORM BOX -->
+    <div class="form-box">
+        <h2>Create Account</h2>
 
-            <label>Enrollment No</label>
-            <input type="text" required><br><br>
+        <form action="login.html" method="get">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Enter Full Name" required>
 
-            <label>Email</label>
-            <input type="email" required><br><br>
+            <label for="enrollment">Enrollment No:</label>
+            <input type="text" id="enrollment" placeholder="Enter Enrollment No" required>
 
-            <label>Mobile Number</label>
-            <input type="tel" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter Email Address" required>
 
-            <label>Department</label>
-            <select>
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" placeholder="Enter Mobile Number" required>
+
+            <label for="department">Department:</label>
+            <select id="department">
                 <option>Computer Engineering</option>
                 <option>Information Technology</option>
-                <option>Computer Science</option>
-                <option>Electronics & Communication</option>
-            </select><br><br>
+                <option>Computer Science &amp; Engineering</option>
+                <option>Electronics &amp; Communication</option>
+            </select>
 
-            <label>Semester</label>
-            <select>
+            <label for="semester">Semester:</label>
+            <select id="semester">
                 <option>Semester 1</option>
                 <option>Semester 2</option>
-                <option>Semester 3</option>
+                <option selected>Semester 3</option>
                 <option>Semester 4</option>
                 <option>Semester 5</option>
                 <option>Semester 6</option>
                 <option>Semester 7</option>
                 <option>Semester 8</option>
-            </select><br><br>
+            </select>
 
-            <label>Password</label>
-            <input type="password" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter Password" required>
 
-            <label>Confirm Password</label>
-            <input type="password" required><br><br>
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" placeholder="Re-enter Password" required>
 
-            <input type="submit" value="Register">
-            <input type="reset" value="Clear">
+            <input type="submit" value="Register Now">
+            <input type="reset" value="Clear Form">
 
+            <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+                Already registered? <a href="login.html" style="color: blue; font-weight: bold;">Login here</a>
+            </p>
         </form>
     </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
 
 </body>
 </html>

@@ -3,92 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Profile</title>
-
-    <style>
-        body{
-            margin:0;
-            font-family:Arial, sans-serif;
-            background-color:#dbeafe;
-        }
-
-        h1{
-            text-align:center;
-            color:rgb(28,40,65);
-            font-family:'Times New Roman', Times, serif;
-            margin-top:20px;
-        }
-
-        .profile-box{
-            width:700px;
-            margin:30px auto;
-            background:white;
-            padding:20px;
-            border-radius:8px;
-            box-shadow:0 0 10px gray;
-        }
-
-        h2{
-            text-align:center;
-            color:rgb(28,40,65);
-        }
-
-        h3{
-            background-color:rgb(28,40,65);
-            color:white;
-            padding:10px;
-            border-radius:5px;
-        }
-
-        p{
-            font-size:17px;
-            margin:10px 0;
-        }
-
-        footer{
-            background-color:rgb(28,40,65);
-            color:white;
-            text-align:center;
-            padding:12px;
-            margin-top:30px;
-        }
-    </style>
-
+    <title>Student Profile - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 
-<body>
+<body class="profile-body">
 
-    <h1>STUDENT HUB</h1>
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <div class="profile-box">
+    <h1 class="page-title">STUDENT PROFILE</h1>
 
-        <h2>Student Profile</h2>
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="profile.html" class="active">PROFILE</a>
+        <a href="course.html">COURSES</a>
+        <a href="event.html">EVENTS</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <div class="profile-card">
+        <h2>Student Profile Information</h2>
 
         <h3>Personal Details</h3>
-
-        <p><b>Name:</b> Yash Vekariya</p>
-        <p><b>Student ID:</b> 23CE001</p>
-        <p><b>Mobile Number:</b> 9876543210</p>
+        <p><b>Full Name:</b> Yashvi Vekariya</p>
+        <p><b>Student ID / Enrollment:</b> 25DCE122</p>
+        <p><b>Mobile Number:</b> +91 9876543210</p>
         <p><b>Blood Group:</b> O+</p>
 
         <h3>Parent Details</h3>
-
         <p><b>Father's Name:</b> Vivek Vekariya</p>
         <p><b>Mother's Name:</b> Priya Vekariya</p>
-        <p><b>Father's Mobile:</b> 9876543211</p>
-        <p><b>Mother's Mobile:</b> 9876543212</p>
+        <p><b>Father's Mobile:</b> +91 9876543211</p>
+        <p><b>Mother's Mobile:</b> +91 9876543212</p>
 
         <h3>Educational Details</h3>
-
-        <p><b>Degree:</b> B.Tech Computer Engineering</p>
-        <p><b>Semester:</b> 3</p>
-        <p><b>Counselor Name:</b> Dr. ABC</p>
-        <p><b>Counselor Mobile:</b> 9876543222</p>
-
+        <p><b>Degree Program:</b> B.Tech Computer Engineering</p>
+        <p><b>Semester:</b> 3rd Semester</p>
+        <p><b>Faculty Counselor:</b> Dr. Rajesh Savaliya</p>
+        <p><b>Counselor Mobile:</b> +91 9876543222</p>
     </div>
 
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
     <footer>
-        &copy; 2026 STUDENT HUB
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
     </footer>
 
 </body>

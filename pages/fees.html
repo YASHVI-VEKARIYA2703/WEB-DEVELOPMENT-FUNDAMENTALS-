@@ -1,51 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fees Details</title>
+    <title>Fees Details - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
 
-    <h1 style="text-align: center; background-color: bisque;" border="1">
-        FEES DETAILS
-    </h1>
+<body class="fees-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
 
-    <table style="margin-left: auto; margin-right: auto;" border="1" height="400px" width="900px">
+    <h1 class="page-title">FEES DETAILS</h1>
 
-        <tr>
-            <th style="background-color: rgb(34,34,151);">SEMESTER</th>
-            <th style="background-color: rgb(34,34,151);">TOTAL FEES</th>
-            <th style="background-color: rgb(34,34,151);">RECEIVED FEES</th>
-            <th style="background-color: rgb(34,34,151);">SCHOLARSHIP AMT.</th>
-            <th style="background-color: rgb(34,34,151);">PENDING FEES</th>
-        </tr>
+    <!-- NAVIGATION -->
+    <nav>
+       
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="attendence.html">ATTENDANCE</a>
+        <a href="result.html">RESULT</a>
+        <a href="fees.html" class="active">FEES</a>
+        <a href="timetable.html">TIME TABLE</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
 
-        <tr align="center">
-            <td>3</td>
-            <td>194750.00</td>
-            <td>194750.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
+    <!-- TABLE BOX -->
+    <div class="table-box">
+        <h2>Semester Fees Payment History</h2>
+        <table class="student-table">
+            <tr>
+                <th>SEMESTER</th>
+                <th>TOTAL FEES (₹)</th>
+                <th>RECEIVED FEES (₹)</th>
+                <th>SCHOLARSHIP (₹)</th>
+                <th>PENDING FEES (₹)</th>
+            </tr>
+            <tr>
+                <td>Semester 3</td>
+                <td>1,94,750.00</td>
+                <td>1,94,750.00</td>
+                <td>0.00</td>
+                <td><span class="badge-pass">0.00 (Cleared)</span></td>
+            </tr>
+            <tr>
+                <td>Semester 2</td>
+                <td>3,500.00</td>
+                <td>3,500.00</td>
+                <td>0.00</td>
+                <td><span class="badge-pass">0.00 (Cleared)</span></td>
+            </tr>
+            <tr>
+                <td>Semester 1</td>
+                <td>3,90,000.00</td>
+                <td>3,90,000.00</td>
+                <td>0.00</td>
+                <td><span class="badge-pass">0.00 (Cleared)</span></td>
+            </tr>
+        </table>
+    </div>
 
-        <tr align="center">
-            <td>2</td>
-            <td>3500.00</td>
-            <td>3500.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
 
-        <tr align="center">
-            <td>1</td>
-            <td>390000.00</td>
-            <td>390000.00</td>
-            <td>0.00</td>
-            <td>0.00</td>
-        </tr>
-
-    </table>
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
 
 </body>
+
 </html>

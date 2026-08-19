@@ -3,44 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>attendence</title>
-    <!-- <link rel="stylesheet" href="/CSS/style.css"> -->
+    <title>Time Table - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-<body>
-    <h1 style="text-align: center; background-color:beige;color:rgb(27, 31, 68);">attendence report</h1>
-    <div style="height: auto; width: auto;">
-    <table style="border:20px;height:200px;width: 1345px;margin: auto;font-size: x-large;"border="1">
-        <tr style="background-color: rgb(27, 31, 68);color: antiquewhite;">
-            <th>subject code</th>
-            <th>location</th>
-            <th>faculty name</th>
-            <th>attendence</th>
-        </tr>
-        <tr>
-            <td>ITUC201</td>
-            <td>209</td>
-            <td>urvashi chudhary</td>
-            <td>p</td>
-        </tr>
-        <tr>
-            <td>MSUD203</td>
-            <td>329</td>
-            <td>rajesh savaliya</td>
-            <td>p</td>
-        </tr>
-        <tr>
-            <td>CEUE203</td>
-            <td>325</td>
-            <td>ronak patel</td>
-            <td>p</td>
-        </tr>
-        <tr>
-            <td>CSUC201201</td>
-            <td>324</td>
-            <td>jay patel</td>
-            <td>p</td>
-        </tr>
-    </table>
-</div>
+<body class="timetable-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="/pages/header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">TIME TABLE</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="attendence.html">ATTENDANCE</a>
+        <a href="result.html">RESULT</a>
+        <a href="fees.html">FEES</a>
+        <a href="timetable.html" class="active">TIME TABLE</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- TABLE BOX -->
+    <div class="table-box">
+        <h2>B.Tech Computer Engineering - Semester 3 Schedule</h2>
+        <table class="student-table">
+            <tr>
+                <th>SUBJECT CODE</th>
+                <th>ROOM / LAB</th>
+                <th>FACULTY NAME</th>
+                <th>ATTENDANCE</th>
+            </tr>
+            <tr>
+                <td>ITUC201 (Python)</td>
+                <td>Room 209</td>
+                <td>Urvashi Chaudhary</td>
+                <td><span class="badge-pass">Present (P)</span></td>
+            </tr>
+            <tr>
+                <td>MSUD203 (Maths)</td>
+                <td>Room 329</td>
+                <td>Rajesh Savaliya</td>
+                <td><span class="badge-pass">Present (P)</span></td>
+            </tr>
+            <tr>
+                <td>CEUE203 (C++)</td>
+                <td>Room 325</td>
+                <td>Ronak Patel</td>
+                <td><span class="badge-pass">Present (P)</span></td>
+            </tr>
+            <tr>
+                <td>CSUC201 (HTML/Web)</td>
+                <td>Room 324</td>
+                <td>Jay Patel</td>
+                <td><span class="badge-pass">Present (P)</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+
 </body>
 </html>
