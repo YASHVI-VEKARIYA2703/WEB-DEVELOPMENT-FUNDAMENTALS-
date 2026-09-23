@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="dashboard-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">STUDENT DASHBOARD</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html" class="active">DASHBOARD</a>
+        <a href="profile.html">PROFILE</a>
+        <a href="course.html">COURSES</a>
+        <a href="event.html">EVENTS</a>
+        <a href="KYA-APPLICATION.HTML">KYA APPLICATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- STUDENT INFO STRIP -->
+    <div class="student-info-bar">
+        <div><b>Student Name:</b> <span id="dashStudentName">Yashvi Vekariya (25DCE122)</span></div>
+        <div><b>Program:</b> <span id="dashStudentProgram">B.Tech (Computer Engineering) - Semester 3</span></div>
+    </div>
+
+    <!-- 4 MAIN BUTTONS -->
+    <div class="dashboard-container">
+
+        <div class="dash-box">
+            <a href="attendence.html">
+                <button>📊 ATTENDANCE</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="result.html">
+                <button>📜 RESULT</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="fees.html">
+                <button>💳 FEES DETAILS</button>
+            </a>
+        </div>
+
+        <div class="dash-box">
+            <a href="timetable.html">
+                <button>📅 TIME TABLE</button>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>

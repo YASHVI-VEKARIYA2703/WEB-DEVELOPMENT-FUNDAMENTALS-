@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Events - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="event-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">CAMPUS &amp; UNIVERSITY EVENTS</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html" class="active">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- =====================================================
+         SEARCH, FILTER AND SORT
+         ===================================================== -->
+
+    <div class="event-controls">
+
+        <!-- SEARCH -->
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search events...">
+
+
+        <!-- FILTER -->
+        <select id="categoryFilter">
+
+            <option value="all">
+                All Categories
+            </option>
+
+            <option value="Technical Fest">
+                Technical Fest
+            </option>
+
+            <option value="Cultural Fest">
+                Cultural Fest
+            </option>
+
+            <option value="Workshop">
+                Workshop
+            </option>
+
+            <option value="Sports Meet">
+                Sports Meet
+            </option>
+
+            <option value="Academic">
+                Academic
+            </option>
+
+        </select>
+
+
+        <!-- SORT -->
+        <select id="sortEvents">
+
+            <option value="default">
+                Sort By
+            </option>
+
+            <option value="titleAsc">
+                Title A-Z
+            </option>
+
+            <option value="titleDesc">
+                Title Z-A
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- =====================================================
+         EVENTS WILL BE DISPLAYED HERE USING JAVASCRIPT
+         ===================================================== -->
+
+    <div
+        class="events-list"
+        id="eventsList">
+
+        <p class="loading">
+            Loading events...
+        </p>
+
+    </div>
+
+
+    <!-- =====================================================
+         PAGINATION
+         ===================================================== -->
+
+    <div
+        class="pagination"
+        id="pagination">
+    </div>
+
+
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
