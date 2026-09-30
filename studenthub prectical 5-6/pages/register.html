@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body class="register-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">STUDENT REGISTRATION</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html" class="active">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+    
+    <!-- REGISTRATION FORM BOX -->
+    <div class="form-box">
+        <h2>Create Account</h2>
+
+        <div id="successBanner" class="success-banner"></div>
+
+        <form id="registerForm" action="login.html" method="get" novalidate>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter Full Name" required>
+            <span class="error-message" id="fullname-error"></span>
+
+            <label for="enrollment">Enrollment No:</label>
+            <input type="text" id="enrollment" name="enrollment" placeholder="Enter Enrollment No" required>
+            <span class="error-message" id="enrollment-error"></span>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            <span class="error-message" id="email-error"></span>
+
+            <label for="mobile">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+            <span class="error-message" id="mobile-error"></span>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option>Computer Engineering</option>
+                <option>Information Technology</option>
+                <option>Computer Science &amp; Engineering</option>
+                <option>Electronics &amp; Communication</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester">
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option selected>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                <option>Semester 7</option>
+                <option>Semester 8</option>
+            </select>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password (min. 6 characters)" required>
+            <span class="error-message" id="password-error"></span>
+
+            <label for="cpassword">Confirm Password:</label>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Re-enter Password" required>
+            <span class="error-message" id="cpassword-error"></span>
+
+            <input type="submit" value="Register Now">
+            <input type="reset" value="Clear Form">
+
+            <p style="text-align: center; margin-top: 15px; font-size: 14px;">
+                Already registered? <a href="login.html" style="color: blue; font-weight: bold;">Login here</a>
+            </p>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+
+    <!-- SCRIPT -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
