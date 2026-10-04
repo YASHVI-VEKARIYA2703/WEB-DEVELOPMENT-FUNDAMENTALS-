@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="contact-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">FREQUENTLY ASKED QUESTIONS</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="faq.html" class="active">FAQ</a>
+    </nav>
+
+    <!-- FAQ MAIN CONTAINER -->
+    <div class="faq-container-card">
+        <h2>Student Help &amp; FAQs</h2>
+        <p class="faq-subtitle">Click on any question below to view the answer.</p>
+
+        <!-- ACCORDION QUESTION LIST -->
+        <div class="faq-list">
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q1. How do I download my exam hall ticket?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>You can download your exam hall ticket by logging into Student Hub and visiting the Examination / Timetable section 7 days prior to examinations.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q2. What is the minimum attendance required to appear in exams?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>As per CHARUSAT University guidelines, a minimum of 80% aggregate attendance is mandatory across all enrolled courses to be eligible for end-semester examinations.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q3. Where can I pay my semester fees online?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Semester fees can be paid via net banking, UPI, or credit/debit card through the Fees tab on this portal, or in person at the University Accounts department.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q4. How do I register for campus events and hackathons?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Go to the Events page from the top navigation bar, browse the list of upcoming technical, cultural, or sports events, and click the 'Register for Event' button.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q5. Whom should I contact for student portal login issues?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>If you forgot your password or cannot access your portal account, contact the IT Helpdesk at <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a> with your enrollment number.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q6. How can I apply for a scholarship?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Eligible students can submit government or university scholarship forms by visiting the Student Welfare Cell (Admin Block, Room 104) before the announced deadline.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q7. Where can I view my semester results and grades?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Navigate to the Result page from your Dashboard after logging in. You will be able to see your SGPA, CGPA, and subject-wise grade reports.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- MODAL POPUP TRIGGER BUTTON -->
+        <div class="faq-modal-prompt">
+            <p>Cannot find the answer you are looking for?</p>
+            <button type="button" id="openFaqModalBtn" class="ask-modal-btn">💬 Ask a Question (Modal Popup)</button>
+        </div>
+    </div>
+
+    <!-- ASK QUESTION MODAL POPUP -->
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Submit Your Question</h3>
+                <span class="modal-close" onclick="closeFaqModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="faqAskForm">
+                    <div class="form-group">
+                        <label for="faqUserName"><b>Your Name:</b></label>
+                        <input type="text" id="faqUserName" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="faqUserEmail"><b>Your Email:</b></label>
+                        <input type="email" id="faqUserEmail" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="faqUserQuestion"><b>Your Question:</b></label>
+                        <textarea id="faqUserQuestion" rows="3" placeholder="Type your question here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn" style="width: 100%;">Submit Question</button>
+                    <p id="modalFeedback" class="form-success-msg" style="display: none;"></p>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-btn-close" onclick="closeFaqModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+
+    <!-- BEGINNER-STYLE CSS -->
+    <style>
+        .faq-container-card {
+            width: 700px;
+            max-width: 90%;
+            margin: 25px auto 50px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-top: 5px solid #1B1F44;
+        }
+
+        .faq-container-card h2 {
+            text-align: center;
+            color: #1B1F44;
+            margin-bottom: 8px;
+            font-size: 24px;
+        }
+
+        .faq-subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .faq-list {
+            margin-top: 10px;
+        }
+
+        .faq-item {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 12px;
+            background-color: #f9fbfd;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #1B1F44;
+            cursor: pointer;
+            user-select: none;
+            background-color: #f1f5f9;
+        }
+
+        .faq-question:hover {
+            background-color: #e2e8f0;
+        }
+
+        .faq-icon {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1B1F44;
+            margin-left: 10px;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 14px 16px;
+            background-color: #ffffff;
+            color: #444444;
+            font-size: 14px;
+            line-height: 1.6;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+        /* Ask Modal Prompt Section */
+        .faq-modal-prompt {
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            background-color: #f8fafc;
+            border-radius: 6px;
+            border: 1px dashed #1B1F44;
+        }
+
+        .faq-modal-prompt p {
+            font-size: 14px;
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        .ask-modal-btn {
+            background-color: orange;
+            color: #1B1F44;
+            border: 1px solid #d48806;
+            padding: 9px 18px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .ask-modal-btn:hover {
+            background-color: #e68a00;
+        }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+
+        .modal-content {
+            background-color: #ffffff;
+            margin: 10% auto;
+            border-radius: 8px;
+            width: 480px;
+            max-width: 90%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+            border-top: 5px solid #1B1F44;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            padding: 14px 20px;
+            background-color: #1B1F44;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #ffd700;
+        }
+
+        .modal-close {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: orange;
+        }
+
+        .modal-body {
+            padding: 20px;
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .form-group {
+            margin-bottom: 14px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #1B1F44;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 9px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1B1F44;
+        }
+
+        .submit-btn {
+            padding: 10px;
+            background-color: #1B1F44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #2b336e;
+        }
+
+        .form-success-msg {
+            margin-top: 12px;
+            padding: 10px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .modal-footer {
+            padding: 12px 20px;
+            background-color: #f1f5f9;
+            text-align: right;
+        }
+
+        .modal-btn-close {
+            padding: 7px 16px;
+            background-color: #1B1F44;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .modal-btn-close:hover {
+            background-color: darkblue;
+        }
+
+        /* Dark mode support */
+        body.dark-mode .faq-container-card {
+            background-color: #1e1e1e !important;
+            color: #e0e0e0 !important;
+            border-top-color: orange !important;
+        }
+
+        body.dark-mode .faq-container-card h2,
+        body.dark-mode .faq-question,
+        body.dark-mode .form-group label {
+            color: #ffffff !important;
+        }
+
+        body.dark-mode .faq-item {
+            border-color: #444;
+            background-color: #252525;
+        }
+
+        body.dark-mode .faq-question {
+            background-color: #2a2a2a;
+        }
+
+        body.dark-mode .faq-question:hover {
+            background-color: #333333;
+        }
+
+        body.dark-mode .faq-answer {
+            background-color: #1e1e1e;
+            color: #cccccc;
+            border-top-color: #444;
+        }
+
+        body.dark-mode .faq-icon {
+            color: orange;
+        }
+
+        body.dark-mode .faq-modal-prompt {
+            background-color: #2a2a2a;
+            border-color: orange;
+        }
+
+        body.dark-mode .modal-content {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .modal-body {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .modal-footer {
+            background-color: #2a2a2a;
+        }
+
+        body.dark-mode .form-group input,
+        body.dark-mode .form-group textarea {
+            background-color: #2d2d2d;
+            color: white;
+            border-color: #555;
+        }
+    </style>
+
+    <!-- BEGINNER-STYLE JAVASCRIPT FOR ACCORDION AND MODAL -->
+    <script>
+        // 1. FAQ Accordion Interaction
+        var faqItems = document.querySelectorAll(".faq-question");
+
+        for (var i = 0; i < faqItems.length; i++) {
+            faqItems[i].addEventListener("click", function () {
+                var parent = this.parentElement;
+                var icon = this.querySelector(".faq-icon");
+
+                if (parent.classList.contains("active")) {
+                    parent.classList.remove("active");
+                    if (icon) icon.textContent = "+";
+                } else {
+                    for (var j = 0; j < faqItems.length; j++) {
+                        faqItems[j].parentElement.classList.remove("active");
+                        var otherIcon = faqItems[j].querySelector(".faq-icon");
+                        if (otherIcon) otherIcon.textContent = "+";
+                    }
+                    parent.classList.add("active");
+                    if (icon) icon.textContent = "-";
+                }
+            });
+        }
+
+        // 2. Modal Popup
+        var faqModal = document.getElementById("faqModal");
+        var openBtn = document.getElementById("openFaqModalBtn");
+        var faqAskForm = document.getElementById("faqAskForm");
+        var modalFeedback = document.getElementById("modalFeedback");
+
+        function openFaqModal() {
+            if (faqModal) faqModal.style.display = "block";
+        }
+
+        function closeFaqModal() {
+            if (faqModal) {
+                faqModal.style.display = "none";
+                if (modalFeedback) modalFeedback.style.display = "none";
+            }
+        }
+
+        if (openBtn) {
+            openBtn.addEventListener("click", openFaqModal);
+        }
+
+        window.addEventListener("click", function (event) {
+            if (event.target === faqModal) {
+                closeFaqModal();
+            }
+        });
+
+        if (faqAskForm) {
+            faqAskForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+                var name = document.getElementById("faqUserName").value;
+                if (modalFeedback) {
+                    modalFeedback.textContent = "Thank you, " + name + "! Your question has been forwarded to academic counselors.";
+                    modalFeedback.style.display = "block";
+                }
+                faqAskForm.reset();
+                setTimeout(function () {
+                    closeFaqModal();
+                }, 2500);
+            });
+        }
+    </script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

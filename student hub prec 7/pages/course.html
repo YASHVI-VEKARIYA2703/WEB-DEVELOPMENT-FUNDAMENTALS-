@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Registration - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="course-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">COURSE REGISTRATION</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html" class="active">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- COURSE FORM BOX -->
+    <div class="form-box">
+        <h2>Course Registration Form</h2>
+
+        <form action="dashboard.html" method="get">
+            <label for="cname">Full Name:</label>
+            <input type="text" id="cname" placeholder="Enter Full Name" required>
+
+            <label for="cemail">Email:</label>
+            <input type="email" id="cemail" placeholder="Enter Email" required>
+
+            <label for="cphone">Phone Number:</label>
+            <input type="tel" id="cphone" placeholder="Enter Phone Number" required>
+
+            <label for="ccourse">Select Course:</label>
+            <select id="ccourse" required>
+                <option value="">-- Select Course --</option>
+                <option>HTML &amp; CSS</option>
+                <option>JavaScript</option>
+                <option>Python</option>
+                <option>Java</option>
+                <option>C++</option>
+                <option>Data Structures</option>
+            </select>
+
+            <label>Gender:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="gender" value="Male" checked> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+            </div>
+
+            <label>Mode of Learning:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="mode" value="Online" checked> Online</label>
+                <label><input type="radio" name="mode" value="Offline"> Offline</label>
+            </div>
+
+            <label for="caddress">Address:</label>
+            <textarea id="caddress" rows="3" placeholder="Enter Address"></textarea>
+
+            <button type="submit">Register Course</button>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

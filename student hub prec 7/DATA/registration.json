@@ -1,0 +1,29 @@
+[
+    {
+        "fullname": "Yashvi Vekariya",
+        "enrollment": "23CE001",
+        "email": "yashvi@example.com",
+        "mobile": "9876543210",
+        "department": "Computer Engineering",
+        "semester": "Semester 3",
+        "registration_time": "2026-09-30 06:28:44"
+    },
+    {
+        "fullname": "yashvi  vekariya",
+        "enrollment": "25dce122",
+        "email": "yashvi@gmail.com",
+        "mobile": "1234567890",
+        "department": "Computer Engineering",
+        "semester": "Semester 3",
+        "registration_time": "2026-09-30 06:33:13"
+    },
+    {
+        "fullname": "jiya patel",
+        "enrollment": "25dce001",
+        "email": "jiya@gmail.com",
+        "mobile": "7894561230",
+        "department": "Computer Engineering",
+        "semester": "Semester 3",
+        "registration_time": "2026-09-30 07:11:02"
+    }
+]
