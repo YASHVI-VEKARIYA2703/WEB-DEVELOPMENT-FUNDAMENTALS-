@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYA (Know Your Answerbook) - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="kya-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">KYA APPLICATION FORM</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.php">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="KYA-APPLICATION.HTML" class="active">KYA APPLICATION</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="logout.php" style="background-color: #dc3545; color: white;" title="End session and log out">LOGOUT 🚪</a>
+    </nav>
+
+    <!-- KYA FORM BOX -->
+    <div class="form-box">
+        <h2>KYA (Know Your Answerbook) Form</h2>
+        <p style="text-align: center; color: #555; font-size: 13.5px; margin-top: -10px; margin-bottom: 15px;">
+            Apply to view and inspect your evaluated university exam answer sheet.
+        </p>
+
+        <form action="dashboard.php" method="get" onsubmit="alert('Your KYA application for answerbook viewing has been submitted successfully! Check your email for inspection schedule.');">
+            
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+
+            <label for="student-id">Student ID / Enrollment No:</label>
+            <input type="text" id="student-id" name="student_id" placeholder="e.g. 25DCE122" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+
+            <label for="dept">Department:</label>
+            <select id="dept" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Computer Science & Engineering">Computer Science &amp; Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+            </select>
+
+            <label for="semester">Semester:</label>
+            <select id="semester" name="semester" required>
+                <option value="">-- Select Semester --</option>
+                <option value="Semester 1">Semester 1</option>
+                <option value="Semester 2">Semester 2</option>
+                <option value="Semester 3">Semester 3</option>
+                <option value="Semester 4">Semester 4</option>
+                <option value="Semester 5">Semester 5</option>
+                <option value="Semester 6">Semester 6</option>
+            </select>
+
+            <label for="session">Examination Session:</label>
+            <select id="session" name="exam_session" required>
+                <option value="">-- Select Exam Session --</option>
+                <option value="Summer 2026 Regular">Summer 2026 Regular Exam</option>
+                <option value="Winter 2025 ATKT">Winter 2025 Regular / ATKT</option>
+                <option value="Mid-Sem 2026">Mid-Semester Exam 2026</option>
+            </select>
+
+            <label for="seat">Exam Seat / Roll Number:</label>
+            <input type="text" id="seat" name="seat_no" placeholder="Enter Exam Seat Number" required>
+
+            <label for="subject">Select Subject for Answerbook:</label>
+            <select id="subject" name="subject" required>
+                <option value="">-- Select Subject --</option>
+                <option value="CE251: Web Development Framework">CE251: Web Development Framework</option>
+                <option value="CE244: Object Oriented Programming">CE244: Object Oriented Programming</option>
+                <option value="CE245: Data Structures & Algorithms">CE245: Data Structures &amp; Algorithms</option>
+                <option value="MA201: Engineering Mathematics III">MA201: Engineering Mathematics III</option>
+                <option value="CE247: Computer Architecture">CE247: Computer Architecture</option>
+            </select>
+
+            <label>Mode of Answerbook Viewing:</label>
+            <div class="radio-row">
+                <label><input type="radio" name="view_mode" value="Physical" checked> Physical Inspection (Campus)</label>
+                <label><input type="radio" name="view_mode" value="Digital"> Digital PDF Copy</label>
+            </div>
+
+            <label for="reason">Reason for Viewing Answerbook:</label>
+            <textarea id="reason" name="reason" rows="3" placeholder="e.g. Totaling verification, check unassessed answers, review marks"></textarea>
+
+            <button type="submit">Submit KYA Form</button>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
