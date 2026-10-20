@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "tag": "Technical Fest",
+        "title": "Cognizance 2026 - Tech Fest & Hackathon",
+        "date": "September 25 - 26, 2026",
+        "venue": "Central Auditorium & IT Labs",
+        "organizer": "Computer Engineering",
+        "description": "A 36-hour coding hackathon featuring AI/ML challenges, Web development contests, Code Relay, and Bug Hunting competitions.",
+        "button": "Register for Event",
+        "link": "register.html"
+    },
+    {
+        "id": 2,
+        "tag": "Cultural Fest",
+        "title": "Spoural 2026 - Youth Cultural Festival",
+        "date": "October 12 - 14, 2026",
+        "venue": "Open Air Theatre",
+        "organizer": "Student Activity Council",
+        "description": "Annual cultural fest featuring dance competitions, drama, music band battles, fashion shows, and celebrity musical night.",
+        "button": "Join Cultural Fest",
+        "link": "register.html"
+    },
+    {
+        "id": 3,
+        "tag": "Workshop",
+        "title": "TechConclave: AI & Cloud Computing Workshop",
+        "date": "November 05, 2026",
+        "venue": "Seminar Hall 1, CE Block",
+        "organizer": "Industry Experts",
+        "description": "Hands-on practical session covering Artificial Intelligence basics, Cloud Deployment, and career roadmaps for students.",
+        "button": "Reserve Seat",
+        "link": "register.html"
+    },
+    {
+        "id": 4,
+        "tag": "Sports Meet",
+        "title": "CHARUSAT Premier League & Sports Meet",
+        "date": "December 18 - 22, 2026",
+        "venue": "Sports Ground",
+        "organizer": "Sports Department",
+        "description": "Inter-department tournament for Cricket, Football, Volleyball, Badminton, Table Tennis, and Chess.",
+        "button": "Register Team",
+        "link": "register.html"
+    },
+    {
+        "id": 5,
+        "tag": "Academic",
+        "title": "15th Annual Convocation Ceremony",
+        "date": "January 10, 2027",
+        "venue": "Grand Convention Hall",
+        "organizer": "Graduating Batches",
+        "description": "Awarding of degrees and academic Gold Medals to graduating B.Tech, M.Tech, and Ph.D. students.",
+        "button": "Contact Helpdesk",
+        "link": "contact.html"
+    },
+    {
+        "id": 6,
+        "tag": "Workshop",
+        "title": "Web Development Bootcamp",
+        "date": "January 20 - 22, 2027",
+        "venue": "Computer Lab 2",
+        "organizer": "IT Department",
+        "description": "A beginner-friendly workshop covering HTML, CSS, JavaScript and basic web development projects.",
+        "button": "Register Now",
+        "link": "register.html"
+    },
+    {
+        "id": 7,
+        "tag": "Technical Fest",
+        "title": "CodeSprint Programming Contest",
+        "date": "February 05, 2027",
+        "venue": "Programming Lab",
+        "organizer": "Computer Engineering",
+        "description": "Programming competition focused on problem solving, data structures and algorithmic thinking.",
+        "button": "Register Now",
+        "link": "register.html"
+    },
+    {
+        "id": 8,
+        "tag": "Sports Meet",
+        "title": "CHARUSAT Badminton Championship",
+        "date": "February 18 - 19, 2027",
+        "venue": "Indoor Sports Complex",
+        "organizer": "Sports Department",
+        "description": "University-level badminton championship with singles and doubles categories.",
+        "button": "Register Team",
+        "link": "register.html"
+    }
+]

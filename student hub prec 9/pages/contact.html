@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="contact-body">
+    
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <!-- NOTIFICATION BANNER -->
+    <div class="notice-bar" id="contactNotice">
+        📢 <span>Notice: University Helpdesk office is open Mon - Sat (9:00 AM - 5:00 PM). Online queries are resolved within 24 hours!</span>
+        <button type="button" class="close-banner-btn" onclick="document.getElementById('contactNotice').style.display='none';">&times;</button>
+    </div>
+
+    <h1 class="page-title">CONTACT US</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="login.html">LOGIN</a>
+        <a href="contact.html" class="active">CONTACT</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <!-- CONTACT DETAILS BOX -->
+    <div class="contact-card">
+        <h2>CHARUSAT Student Helpdesk</h2>
+
+        <p><b>📞 Phone:</b> +91 985641237 / +91 (02697) 265011</p>
+
+        <p><b>✉️ Email:</b> <a href="mailto:studenthub@gmail.com">studenthub@gmail.com</a></p>
+
+        <p><b>🌐 Website:</b> <a href="../index.html">www.studenthub.com</a></p>
+
+        <p><b>📍 Address:</b> CHARUSAT University Campus, Changa - 388421, Gujarat, India</p>
+
+        <p><b>⏰ Working Hours:</b> Monday - Saturday (9:00 AM - 5:00 PM)</p>
+
+        <!-- BUTTON TO OPEN MODAL POPUP -->
+        <button type="button" id="openModalBtn" class="modal-open-btn">ℹ️ View Helpdesk Guidelines &amp; Rules</button>
+    </div>
+
+    <!-- STUDENT QUERY / FEEDBACK FORM -->
+    <div class="contact-card">
+        <h2>Send Us a Query / Feedback</h2>
+        <p style="text-align: center; color: #555; margin-bottom: 20px; font-size: 14px;">Fill out this form if you have any questions or concerns</p>
+
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="studentName"><b>Full Name:</b></label>
+                <input type="text" id="studentName" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="studentEmail"><b>Email Address:</b></label>
+                <input type="email" id="studentEmail" placeholder="Enter your email address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="queryCategory"><b>Query Category:</b></label>
+                <select id="queryCategory" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="Admission">Admission Inquiry</option>
+                    <option value="Examination">Examination &amp; Results</option>
+                    <option value="Fees">Fee Payment &amp; Scholarship</option>
+                    <option value="Course">Course &amp; Timetable</option>
+                    <option value="Technical Support">Technical Portal Support</option>
+                    <option value="Other">Other Query</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="studentMessage"><b>Your Message:</b></label>
+                <textarea id="studentMessage" rows="4" placeholder="Type your query or message here..." required></textarea>
+            </div>
+
+            <div class="btn-group">
+                <button type="submit" class="submit-btn">Send Query</button>
+                <button type="reset" class="reset-btn">Reset</button>
+            </div>
+
+            <p id="formSuccess" class="form-success-msg"></p>
+        </form>
+    </div>
+
+    <!-- MODAL POPUP DIALOG -->
+    <div id="helpdeskModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>CHARUSAT Helpdesk Guidelines</h3>
+                <span class="modal-close" onclick="closeHelpdeskModal()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p><b>⏰ Office Timings:</b> Monday - Saturday (9:00 AM to 5:00 PM)</p>
+                <p><b>⏱️ Response Window:</b> Online queries are answered within 24 to 48 working hours.</p>
+                <p><b>🆔 Student ID:</b> Keep your 7-character Enrollment Number ready when calling helpdesk.</p>
+                <p><b>📍 In-Person Support:</b> Central Helpdesk Counter, Ground Floor, Admin Block, Changa Campus.</p>
+                <p><b>🚨 Exam Emergencies:</b> Report directly to Room 209 (Academic Coordination Cell).</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="modal-btn-close" onclick="closeHelpdeskModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+
+    <!-- BEGINNER-STYLE CSS -->
+    <style>
+        /* Notification Banner Custom Styling */
+        .notice-bar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 10px 40px;
+        }
+
+        .close-banner-btn {
+            position: absolute;
+            right: 15px;
+            background: transparent;
+            border: none;
+            font-size: 22px;
+            font-weight: bold;
+            color: #1B1F44;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .close-banner-btn:hover {
+            color: darkred;
+        }
+
+        /* Modal Open Button */
+        .modal-open-btn {
+            display: block;
+            width: 100%;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: orange;
+            color: #1B1F44;
+            border: 1px solid #d48806;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .modal-open-btn:hover {
+            background-color: #e68a00;
+        }
+
+        /* Modal Overlay */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.55);
+        }
+
+        /* Modal Dialog Box */
+        .modal-content {
+            background-color: #ffffff;
+            margin: 12% auto;
+            border-radius: 8px;
+            width: 480px;
+            max-width: 90%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+            border-top: 5px solid #1B1F44;
+            overflow: hidden;
+        }
+
+        .modal-header {
+            padding: 14px 20px;
+            background-color: #1B1F44;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #ffd700;
+        }
+
+        .modal-close {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .modal-close:hover {
+            color: orange;
+        }
+
+        .modal-body {
+            padding: 20px;
+            font-size: 14px;
+            line-height: 1.7;
+            color: #333333;
+        }
+
+        .modal-body p {
+            margin-bottom: 10px;
+        }
+
+        .modal-footer {
+            padding: 12px 20px;
+            background-color: #f1f5f9;
+            text-align: right;
+        }
+
+        .modal-btn-close {
+            padding: 8px 18px;
+            background-color: #1B1F44;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .modal-btn-close:hover {
+            background-color: darkblue;
+        }
+
+        /* Form Styling */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            color: #1B1F44;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 14px;
+            font-family: inherit;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1B1F44;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 12px;
+            margin-top: 18px;
+        }
+
+        .submit-btn {
+            flex: 1;
+            padding: 10px;
+            background-color: #1B1F44;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: #2b336e;
+        }
+
+        .reset-btn {
+            flex: 1;
+            padding: 10px;
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .reset-btn:hover {
+            background-color: #b52a37;
+        }
+
+        .form-success-msg {
+            display: none;
+            margin-top: 15px;
+            padding: 12px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        /* Dark mode support */
+        body.dark-mode .contact-card {
+            background-color: #1e1e1e !important;
+            color: #e0e0e0 !important;
+            border-top-color: orange !important;
+        }
+
+        body.dark-mode .contact-card h2,
+        body.dark-mode .form-group label {
+            color: #ffffff !important;
+        }
+
+        body.dark-mode .modal-content {
+            background-color: #1e1e1e;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .modal-body {
+            color: #e0e0e0;
+        }
+
+        body.dark-mode .modal-footer {
+            background-color: #2a2a2a;
+        }
+
+        body.dark-mode .form-group input,
+        body.dark-mode .form-group select,
+        body.dark-mode .form-group textarea {
+            background-color: #2d2d2d;
+            color: #ffffff;
+            border-color: #555555;
+        }
+    </style>
+
+    <!-- BEGINNER-STYLE JAVASCRIPT FOR FORM AND MODAL -->
+    <script>
+        // 1. Query Form Submission
+        var contactForm = document.getElementById("contactForm");
+        var formSuccess = document.getElementById("formSuccess");
+
+        if (contactForm) {
+            contactForm.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                var studentName = document.getElementById("studentName").value;
+
+                // Show confirmation message
+                if (formSuccess) {
+                    formSuccess.textContent = "Thank you, " + studentName + "! Your query has been received. Our helpdesk team will get back to you soon.";
+                    formSuccess.style.display = "block";
+                }
+
+                // Clear input fields
+                contactForm.reset();
+
+                // Hide message after 5 seconds
+                setTimeout(function () {
+                    if (formSuccess) {
+                        formSuccess.style.display = "none";
+                    }
+                }, 5000);
+            });
+
+            contactForm.addEventListener("reset", function () {
+                if (formSuccess) {
+                    formSuccess.style.display = "none";
+                }
+            });
+        }
+
+        // 2. Modal Popup
+        var helpdeskModal = document.getElementById("helpdeskModal");
+        var openModalBtn = document.getElementById("openModalBtn");
+
+        function openHelpdeskModal() {
+            if (helpdeskModal) {
+                helpdeskModal.style.display = "block";
+            }
+        }
+
+        function closeHelpdeskModal() {
+            if (helpdeskModal) {
+                helpdeskModal.style.display = "none";
+            }
+        }
+
+        if (openModalBtn) {
+            openModalBtn.addEventListener("click", openHelpdeskModal);
+        }
+
+        // Close modal when user clicks outside modal-content
+        window.addEventListener("click", function (event) {
+            if (event.target === helpdeskModal) {
+                closeHelpdeskModal();
+            }
+        });
+    </script>
+    <script src="../js/script.js"></script>
+
+</body>
+</html>
