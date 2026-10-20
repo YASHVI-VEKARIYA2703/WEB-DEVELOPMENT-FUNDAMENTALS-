@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KYA Application - Student Hub</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body class="kya-body">
+
+    <!-- HEADER -->
+    <iframe
+        src="header.html"
+        class="header-frame">
+    </iframe>
+
+    <h1 class="page-title">KYA APPLICATION FORM</h1>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <a href="dashboard.html">DASHBOARD</a>
+        <a href="event.html">EVENTS</a>
+        <a href="course.html">COURSES</a>
+        <a href="register.html">REGISTER</a>
+        <a href="KYA-APPLICATION.HTML" class="active">KYA APPLICATION</a>
+        <a href="contact.html">CONTACT</a>
+    </nav>
+
+    <!-- KYA FORM BOX -->
+    <div class="form-box">
+        <h2>KYA (Know Your Admission) Form</h2>
+
+        <form action="dashboard.html" method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" placeholder="Enter Full Name" required>
+
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" placeholder="Enter Student ID" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" placeholder="Enter Email" required>
+
+            <label for="course">Degree / Course:</label>
+            <input type="text" id="course" placeholder="e.g. B.Tech Computer Engineering" required>
+
+            <label for="semester">Semester:</label>
+            <input type="text" id="semester" placeholder="e.g. Semester 3" required>
+
+            <button type="submit">Submit KYA Form</button>
+        </form>
+    </div>
+
+    <!-- HOME BUTTON AT BOTTOM RIGHT -->
+    <a href="../index.html" class="home-btn">🏠 Home</a>
+
+    <!-- FOOTER -->
+    <footer>
+        &copy; 2026 STUDENT HUB • CHARUSAT University • All Rights Reserved.
+    </footer>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>
+
+
